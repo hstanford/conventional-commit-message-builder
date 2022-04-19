@@ -8,6 +8,8 @@ Quick script to craft commit messages in a consistent format.
 
 ## Run
 
+Print formatted commit message:
 ```cmb```
 
-```cmb | git commit -F -```
+Commit using formatted message:
+```cmb commit```
