@@ -10,4 +10,4 @@ Quick script to craft commit messages in a consistent format.
 
 ```cmb```
 
-```git commit -m $(cmb)```
+```cmb | git commit -F -```
