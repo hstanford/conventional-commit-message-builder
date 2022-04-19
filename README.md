@@ -4,7 +4,7 @@ Quick script to craft commit messages in a consistent format.
 
 ## Install
 
-```npm i -g conventional-commit-message-builder```
+```sudo npm i -g conventional-commit-message-builder```
 
 ## Run
 
