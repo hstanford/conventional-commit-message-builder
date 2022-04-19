@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 
+const { exec } = require('child_process');
 const inquirer = require('inquirer');
+
+function quote(s) {
+  if (s === '') return `''`;
+  if (!/[^%+,-.\/:=@_0-9A-Za-z]/.test(s)) return s;
+  return `'` + s.replace(/'/g, `'"'`) + `'`;
+}
 
 const questions = [
   {
@@ -109,5 +116,10 @@ inquirer.prompt(questions).then((answers) => {
     message += '\n\n' + answers.body;
   if (answers.footer)
     message += '\n\n' + answers.footer;
-  console.log(message);
+
+  if (process.argv[2] === 'commit') {
+    exec(`git commit -m ${quote(message)}`);
+  } else {
+    process.stdout.write(message);
+  }
 });
