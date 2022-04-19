@@ -1,0 +1,17 @@
+{
+  "name": "conventional-commit-message-builder",
+  "version": "0.0.1",
+  "description": "A commit message builder in the style of \"conventional commits\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cmb": "index.js"
+  },
+  "author": "Henry Stanford",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
