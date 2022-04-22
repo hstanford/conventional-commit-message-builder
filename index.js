@@ -88,7 +88,7 @@ const questions = [
   {
     type: 'input',
     name: 'subject',
-    message: 'Subject: a succint summary of the change\n',
+    message: 'Subject: a succinct summary of the change\n',
     validate: (input) => !!input || 'Subject is mandatory'
   },
   {
