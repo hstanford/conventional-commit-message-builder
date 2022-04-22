@@ -1,6 +1,6 @@
 {
   "name": "conventional-commit-message-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A commit message builder in the style of \"conventional commits\"",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hstanford/conventional-commit-message-builder"
+  },
+  "keywords": ["conventional", "commit", "message", "builder", "cli", "simple"],
+  "homepage": "https://github.com/hstanford/conventional-commit-message-builder"
 }
